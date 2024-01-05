@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import BackgroundContainer from "@/components/ui/my_ui/background-container";
+import PrimaryHeader from "./(marketing)/_components/primary-header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,12 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={`${inter.className} bg-slate-800 max-w-6xl mx-auto`}>
+          <BackgroundContainer>
+            <PrimaryHeader />
+            {children}
+          </BackgroundContainer>
+        </body>
       </html>
     </ClerkProvider>
   );
