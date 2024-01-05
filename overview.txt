@@ -5,3 +5,7 @@ Authentication with Clerk
 Prisma and MongoDB
 develop front end
 add stripe
+Front End:
+    1. Header
+    2. Hero 
+    3. Sign up and Login
