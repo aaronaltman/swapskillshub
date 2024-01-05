@@ -26,16 +26,6 @@ export default function RootLayout({
           <BackgroundContainer>
             <PrimaryHeader />
             {children}
-            <div className="flex justify-center items-center">
-              <Image
-                src="/hero.png"
-                alt="hero"
-                width={600}
-                height={600}
-                priority={true}
-                className="shadow-xl rounded-lg mx-auto w-full"
-              />
-            </div>
             <Footer />
           </BackgroundContainer>
         </body>
