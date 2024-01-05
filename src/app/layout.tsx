@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import BackgroundContainer from "@/components/ui/my_ui/background-container";
 import PrimaryHeader from "./(marketing)/_components/primary-header";
 import Footer from "@/components/ui/my_ui/footer";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,16 @@ export default function RootLayout({
           <BackgroundContainer>
             <PrimaryHeader />
             {children}
+            <div className="flex justify-center items-center">
+              <Image
+                src="/hero.png"
+                alt="hero"
+                width={600}
+                height={600}
+                priority={true}
+                className="shadow-xl rounded-lg mx-auto w-full"
+              />
+            </div>
             <Footer />
           </BackgroundContainer>
         </body>
