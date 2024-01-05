@@ -1,0 +1,7 @@
+Authentication with Clerk
+    1. add Clerk
+    2. set up clerk 
+    3. test clerk 
+Prisma and MongoDB
+develop front end
+add stripe
