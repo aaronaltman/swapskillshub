@@ -6,6 +6,8 @@ export default function BackgroundContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-zinc-100 max-w-6xl mx-auto">{children}</div>
+    <div className="flex flex-col min-h-screen bg-zinc-100 max-w-6xl mx-auto">
+      {children}
+    </div>
   );
 }
